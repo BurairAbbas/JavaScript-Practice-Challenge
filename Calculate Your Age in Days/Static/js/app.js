@@ -19,6 +19,9 @@ function reset(){
     // so when we click on reset due to two ids it will not remove the text next time.
     // document.getElementById("ageInDays").innerHTML = "";
 
+    // Above issue is cause becoz
+    // javascript optimizes getElementById on the assumption that ids are unique. So it always only retrieves one element.
+
     // it remove th h1 tag too. So in ispect it look like same as our default layout.
     document.getElementById("ageInDays").remove();
 }
